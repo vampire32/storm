@@ -4,23 +4,20 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import C1 from '../img/window-tinting-2.jpg'
 import C2 from '../img/carousel-2.jpg'
-import Icon7 from '../img/icon/icon-07-primary.png'
-import Icon9 from "../img/icon/icon-09-primary.png";
-import Icon8 from "../img/icon/icon-08-light.png";
-import Icon10 from "../img/icon/icon-10-light.png";
-import Icon6 from "../img/icon/icon-06-light.png";
-import Icon1 from "../img/icon/icon-01-light.png";
-import Icon2 from "../img/icon/icon-02-light.png";
-import Icon3 from "../img/icon/icon-03-light.png";
-import Icon4 from "../img/icon/icon-04-light.png";
-import Icon5 from "../img/icon/icon-05-light.png";
+
 import {
 	GiShakingHands,
 	GiAchievement,
 	GiCombinationLock,
 	GiThreeFriends,
+	GiFactory,
+	GiMetalDisc,
+	
 } from "react-icons/gi";
 import {FcApproval} from 'react-icons/fc'
+import { BsShieldCheck, BsPeople } from "react-icons/bs";
+import { GrUserWorker, GrUnorderedList, GrDeliver } from "react-icons/gr";
+
 
 import A1 from '../img/about-1.jpg'
 import A2 from "../img/about-2.jpg";
@@ -28,6 +25,7 @@ import A3 from "../img/about-3.jpg";
 import A4 from "../img/about-4.jpg";
 import { AiFillPhone } from "react-icons/ai";
 import { BsFillEnvelopeFill } from "react-icons/bs";
+import {FiPhoneCall} from "react-icons/fi"
 import Feature from '../img/why-us-img.png'
 import S1 from '../img/service-1.jpg'
 import S2 from "../img/service-2.jpg";
@@ -42,6 +40,7 @@ import T4 from "../img/team-4.jpg";
 import R1 from '../img/testimonial-1.jpg'
 import R2 from "../img/testimonial-2.jpg";
 import R3 from "../img/testimonial-3.jpg";
+import ContactForm from '@/Components/ContactForm'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -85,7 +84,7 @@ export default function Home() {
 												href=""
 												class="btn btn-primary py-3 px-5 animated slideInDown"
 											>
-												Explore More
+												Book Me
 											</a>
 										</div>
 									</div>
@@ -116,7 +115,7 @@ export default function Home() {
 												href=""
 												class="btn btn-primary py-3 px-5 animated slideInDown"
 											>
-												Explore More
+												Call Now
 											</a>
 										</div>
 									</div>
@@ -226,32 +225,26 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid  my-5 py-5 bgimage" data-parallax="scroll">
-				<div class="container py-5">
-					<div class="row g-5">
-						<div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+			<div class="container-fluid   my-5 py-5 bgimage" data-parallax="scroll">
+				<div class="container  py-5">
+					<div class="row g-5  ">
+						<div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
 							<h1 class="display-4 text-white" data-toggle="counter-up">
-								1234
+								+500 Million
 							</h1>
 							<span class="text-primary">Happy Clients</span>
 						</div>
-						<div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+						<div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
 							<h1 class="display-4 text-white" data-toggle="counter-up">
-								1234
+								+200
 							</h1>
-							<span class="text-primary">Projects Succeed</span>
+							<span class="text-primary">Exper Team</span>
 						</div>
-						<div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+						<div class="col-sm-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
 							<h1 class="display-4 text-white" data-toggle="counter-up">
-								1234
+								+385
 							</h1>
-							<span class="text-primary">Awards Achieved</span>
-						</div>
-						<div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-							<h1 class="display-4 text-white" data-toggle="counter-up">
-								1234
-							</h1>
-							<span class="text-primary">Team Members</span>
+							<span class="text-primary">Ongoing Project</span>
 						</div>
 					</div>
 				</div>
@@ -542,667 +535,320 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid overflow-hidden my-5 px-lg-0">
-				<div class="container quote px-lg-0 bgimage">
-					<div class="row g-0 mx-lg-0">
-						<div class="col-lg-6 quote-text ">
-							<div
-								class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn"
-								data-wow-delay="0.1s"
-							>
-								<h1 class="text-white mb-4">
-									For Individuals And Organisations
-								</h1>
-								<p class="text-light mb-5">
-									Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-									Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-									sed stet lorem sit clita duo justo magna dolore erat amet
+			<div className="bgimage2 py-28 mt-5">
+				<div className="row container">
+					<div className="col-md-6">
+						<h1 className="text-center text-[44px] text-white font-bold">
+							CALL US FOR LIVE ASSISTANCE
+						</h1>
+						<h2 className="text-center text-[28px] text-white font-semibold">
+							Its time to turn to our experts for assignment
+						</h2>
+					</div>
+					<div className="col-md-6">
+						<a className="btn btn-primary lg:ml-52  mt-4 inline-flex px-10">
+							{" "}
+							<FiPhoneCall size={20} style={{ marginRight: "10px" }} /> Call Now
+						</a>
+					</div>
+				</div>
+			</div>
+			<div className="container">
+				<h1 className="text-center text-[44px] font-bold mb-5">GUARANTEES</h1>
+				<h2 className="text-center text-[20px] mb-2 font-semibold">
+					In the UAE, storm Automotive is a reliable source of tint and provides
+					some of the best warranties available.
+				</h2>
+				<h2 className="text-center text-[20px] mb-2 font-semibold">
+					Protection against colour fading We guarantee that all of our window
+					films wont fade for years, and that both intense wind and direct
+					sunlight wont dull their glossy sheen.
+				</h2>
+				<div className="row mt-10">
+					<div className="col-md-4">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top  mt-5">
+								<BsShieldCheck size={50} style={{ marginLeft: "45%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] font-bold">
+									Warranty for UV ray blockage
+								</h5>
+								<p class="card-text text-justify">
+									The window/car tints from Storm Automotive offer some UV and
+									infrared radiation protection. They will therefore let you to
+									enjoy natural sunshine without having to deal with its
+									negative consequences.
 								</p>
-								<a href="" class="align-self-start btn btn-primary py-3 px-5">
-									More Details
-								</a>
 							</div>
 						</div>
-						<div class="col-lg-6 quote-form bgimage" data-parallax="scroll">
+					</div>
+					<div className="col-md-4">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top  mt-5">
+								<GiFactory size={50} style={{ marginLeft: "45%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] font-bold">
+									Industry’s leading warranties
+								</h5>
+								<p class="card-text text-justify">
+									Our contemporary window films offer all the advantages
+									outlined by industry standards. Additionally, they come with a
+									warranty against delamination, peeling, blistering, and
+									bubbling. They are non-metallic, so they dont affect how
+									mobile devices and satellite communications normally operate.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-4">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top mt-5">
+								<GiMetalDisc size={50} style={{ marginLeft: "45%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] font-bold">
+									Warranty for non-metallic window films
+								</h5>
+								<p class="card-text text-justify">
+									Our contemporary automobile window films do not include any
+									metallic components, in contrast to their conventional
+									equivalents. As a result, they dont prevent mobile devices and
+									satellite signals from operating normally.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p className="mt-8 font-semibold text-justify">
+					In addition to adhering to the many quality standards established by
+					the new Federal Traffic Law that went into effect on July 1st, we also
+					follow an universal installation guideline. Additionally, we back up
+					the same with a few warranties that come with each window film.
+					<br /> If it turns out that our product is flawed, we will replace it
+					at no additional cost. You will need to provide the purchase receipt,
+					which includes information on the kind of film and the installation
+					date, in order to take advantage of the guarantee. The length of the
+					guarantee may differ depending on the particular automobile or window
+					tint you have selected. The following warranties are provided to our
+					clients.
+				</p>
+			</div>
+			<div className=" bgimage">
+				<h1 className="text-center text-white text-[32px] font-bold">
+					HOW IT WORKS
+				</h1>
+				<div className="row container py-28 m-auto">
+					<div className="col-md-3">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top   mt-5">
+								<BsPeople size={100} style={{ marginLeft: "35%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] text-center font-bold">
+									MEET THE CLIENT
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-3">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top  mt-5">
+								<GrUserWorker size={100} style={{ marginLeft: "35%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] text-center font-bold">
+									CUSTOMISE SOLUTION
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-3">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top  mt-5">
+								<GrUnorderedList size={100} style={{ marginLeft: "35%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] text-center font-bold">
+									CONFIRM ORDER
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-3">
+						<div class="card" style={{ width: "18rem" }}>
+							<div class="card-img-top  mt-5">
+								<GrDeliver size={100} style={{ marginLeft: "35%" }} />
+							</div>
+
+							<div class="card-body">
+								<h5 class="card-title text-[18px] text-center font-bold">
+									DELIVERY & INSTALLATION
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className=" mt-10">
+				<div className="container m-auto">
+					<h1 className="font-bold text-[44px]">
+						STORM AUTOMATIVE WINDOW FILM AND CAR TINTING CENTER SHARJAH
+					</h1>
+					<h2 className="font-semibold text-[20px] text-justify mt-5 mb-5 leading-8">
+						WINDOW TINTING CAN OFFER LONG-LASTING PRACTICAL ADVANTAGES, SUCH AS
+						PRIVACY, SUN PROTECTION, AND SAFETY, IN ADDITION TO IMPROVING
+						AESTHETICS. STORM AUTOMOTIVE IS A REPUTABLE AUTO TINTING BUSINESS
+						THAT WORKS WITH YOU TO INSTALL AN OPTICALLY TRANSPARENT FILM TO GIVE
+						VEHICLES THE PERFORMANCE AND APPEARANCE YOU WANT. ALL OF OUR
+						MATERIALS PROTECT AGAINST UV RADIATION AND ADHERE TO UAE AUTOMOBILE
+						TINTING REGULATIONS. ADDITIONALLY, THEY INCLUDE A UV PROTECTION
+						CERTIFICATION THAT YOU CAN ATTEST TO.
+					</h2>
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button
+									class="accordion-button"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne"
+								>
+									Trusted Window Tinting Centre in Dubai
+								</button>
+							</h2>
 							<div
-								class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn"
-								data-wow-delay="0.5s"
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="headingOne"
+								data-bs-parent="#accordionExample"
 							>
-								<div class="bg-white p-4 p-sm-5">
-									<div class="row g-3">
-										<div class="col-sm-6">
-											<div class="form-floating">
-												<input
-													type="text"
-													class="form-control"
-													id="gname"
-													placeholder="Gurdian Name"
-												/>
-												<label for="gname">Your Name</label>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="form-floating">
-												<input
-													type="email"
-													class="form-control"
-													id="gmail"
-													placeholder="Gurdian Email"
-												/>
-												<label for="gmail">Your Email</label>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="form-floating">
-												<input
-													type="text"
-													class="form-control"
-													id="cname"
-													placeholder="Child Name"
-												/>
-												<label for="cname">Your Mobile</label>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="form-floating">
-												<input
-													type="text"
-													class="form-control"
-													id="cage"
-													placeholder="Child Age"
-												/>
-												<label for="cage">Service Type</label>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-floating">
-												<textarea
-													class="form-control"
-													placeholder="Leave a message here"
-													id="message"
-													style={{ height: "80px" }}
-												></textarea>
-												<label for="message">Message</label>
-											</div>
-										</div>
-										<div class="col-12">
-											<button class="btn  py-3 px-5" type="submit">
-												Get A Free Quote
-											</button>
-										</div>
-									</div>
+								<div class="accordion-body text-justify">
+									Window films are an excellent investment since they offer
+									everything from temperature control to sun protection. Optical
+									clear films may be installed by Storm Automotive, a reputable
+									window tinting business, to safeguard your car and provide you
+									with a safer and more pleasant ride. We have a wide variety of
+									automobile tints to comply with the new traffic regulation in
+									Dubai, which permits car owners to receive up to 50% tint.
+									<br />
+									<br />
+									Your automobile may have a brand-new appearance thanks to our
+									high-quality window tinting services. We can provide you with
+									the ideal window/car tinting solution, regardless of whether
+									you need a specific amount of UV protection, light filtering,
+									interior upgrading, privacy, safety, or glare relief. Our
+									staff considers each customers particular needs and offers the
+									best window tinting materials to fit them.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo"
+								>
+									Upgrade the Style and Comfort of Your Vehicle with storm
+									Window Tinting
+								</button>
+							</h2>
+							<div
+								id="collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body text-justify">
+									We try to satisfy the various demands of automobile owners in
+									the UAE with our premium automotive window tinting, which
+									exudes unrivalled excellence. We provide you with a wide range
+									of automobile tinting choices that enable you to drive more
+									easily, including Crystalline, Ceramic Coating, and FX Series.
+									Simply inform us of your issues, and our window tinting
+									specialists will respond with appropriate advice. We will
+									implement a product or service when you approve it.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+								>
+									An Exhaustive Range of Car Window Tinting Services
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="headingThree"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									Storm automotive, a window tinting company with years of
+									expertise, offers a wide range of automobile and window
+									tinting choices in dubai. Therefore, you may choose a window
+									film that suits your needs here, whether you want privacy and
+									protection or a better look. We make sure that all of our
+									products are made to offer uv protection, reduce overheating,
+									and the required amount of privacy since we are an approved
+									storm vehicle tinting facility in dubai.
+									<br /> In addition to providing products of the highest
+									calibre, our business places a huge emphasis on appropriate
+									installation and finishing. Additionally, as an approved
+									automobile tinting shop, we provide a wide array of services,
+									including
+									<br />
+									<span className="text-red-600">Car Window Tinting </span>
+									<br />
+									Our premium selection of storm sun control films gives the
+									inside of your automobile the necessary degree of privacy and
+									security..
+									<br />
+									<span className="text-red-600">
+										Creative Vehicle Graphics{" "}
+									</span>
+									<br />
+									As a storm certified car tinting shop in Dubai, we give you
+									countless opportunities to express your creativity via vehicle
+									wraps.
+									<br />
+									<span className="text-red-600">Paint Protection Film </span>
+									<br />
+									When used on a cars painted surfaces, this high-end automobile
+									tinting aids in avoiding fading or abrasion.
+									<br />
+									<span className="text-red-600">Car Detailing </span>
+									<br />
+									With a range of services, we can provide a brand-new look to
+									the interior and exterior of your car.
+									<br />
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-xxl py-5">
-				<div class="container">
-					<div
-						class="text-center mx-auto wow fadeInUp"
-						data-wow-delay="0.1s"
-						style={{ maxWidth: "500px" }}
-					>
-						<h1 class="display-6 mb-5">Meet Our Professional Team Members</h1>
-					</div>
-					<div class="row g-4">
-						<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-							<div class="team-item">
-								<div class="team-img position-relative overflow-hidden">
-									<div class="img-fluid">
-										<Image src={T1} alt="" />
-									</div>
-
-									<div class="team-social">
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-facebook-f"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-twitter"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-instagram"></i>
-										</a>
-									</div>
-								</div>
-								<div class="bg-light text-center p-4">
-									<h5>Full Name</h5>
-									<span class="text-primary">Designation</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-							<div class="team-item">
-								<div class="team-img position-relative overflow-hidden">
-									<div class="img-fluid">
-										<Image src={T2} alt="" />
-									</div>
-									<div class="team-social">
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-facebook-f"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-twitter"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-instagram"></i>
-										</a>
-									</div>
-								</div>
-								<div class="bg-light text-center p-4">
-									<h5>Full Name</h5>
-									<span class="text-primary">Designation</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-							<div class="team-item">
-								<div class="team-img position-relative overflow-hidden">
-									<div class="img-fluid">
-										<Image src={T3} alt="" />
-									</div>
-									<div class="team-social">
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-facebook-f"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-twitter"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-instagram"></i>
-										</a>
-									</div>
-								</div>
-								<div class="bg-light text-center p-4">
-									<h5>Full Name</h5>
-									<span class="text-primary">Designation</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-							<div class="team-item">
-								<div class="team-img position-relative overflow-hidden">
-									<div class="img-fluid">
-										<Image src={T4} alt="" />
-									</div>
-									<div class="team-social">
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-facebook-f"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-twitter"></i>
-										</a>
-										<a
-											class="btn btn-square btn-primary rounded-circle m-1"
-											href=""
-										>
-											<i class="fab fa-instagram"></i>
-										</a>
-									</div>
-								</div>
-								<div class="bg-light text-center p-4">
-									<h5>Full Name</h5>
-									<span class="text-primary">Designation</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container-xxl py-5">
-				<div class="container">
-					<div
-						class="text-center mx-auto wow fadeInUp"
-						data-wow-delay="0.1s"
-						style={{ maxWidth: "500px" }}
-					>
-						<h1 class="display-6 mb-5">What They Say About Our Services</h1>
-					</div>
-					<div
-						id="carouselExampleCaptions"
-						class="carousel slide relative carousel-dark"
-						data-bs-ride="carousel"
-					>
-						<div class="carousel-inner relative w-full overflow-hidden">
-							<div class="carousel-item active relative float-left w-full">
-								<div class="">
-									<Image
-										style={{
-											borderRadius: "9999px",
-											marginLeft: "auto",
-											marginRight: "auto",
-										}}
-										src={R1}
-										alt="avatar"
-										width={150}
-										height={150}
-									/>
-								</div>
-								<div class="flex flex-wrap justify-center">
-									<div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-										<h5 class="text-lg font-bold mb-3">Hassan Tariq</h5>
-
-										<p class="text-gray-500 mb-6">
-											<svg
-												aria-hidden="true"
-												focusable="false"
-												data-prefix="fas"
-												data-icon="quote-left"
-												class="w-6 pr-2 inline-block"
-												role="img"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 512 512"
-											>
-												<path
-													fill="currentColor"
-													d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-												></path>
-											</svg>
-											I think this is a fantastic farm in our area, with
-											excellent work being done.
-										</p>
-										<ul class="flex justify-center mb-0">
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="far"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
-													></path>
-												</svg>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item relative float-left w-full">
-								<Image
-									style={{
-										borderRadius: "9999px",
-										marginLeft: "auto",
-										marginRight: "auto",
-									}}
-									src={R2}
-									alt="avatar"
-									width={150}
-									height={150}
-								/>
-								<div class="flex flex-wrap justify-center">
-									<div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-										<h5 class="text-lg font-bold mb-3">Mujeeb Khan</h5>
-
-										<p class="text-gray-500 mb-6">
-											<svg
-												aria-hidden="true"
-												focusable="false"
-												data-prefix="fas"
-												data-icon="quote-left"
-												class="w-6 pr-2 inline-block"
-												role="img"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 512 512"
-											>
-												<path
-													fill="currentColor"
-													d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-												></path>
-											</svg>
-											Excellent service, good quality and amount of oranges.
-										</p>
-										<ul class="flex justify-center mb-0">
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star-half-alt"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 536 512"
-												>
-													<path
-														fill="currentColor"
-														d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z"
-													></path>
-												</svg>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item relative float-left w-full">
-								<Image
-									style={{
-										borderRadius: "9999px",
-										marginLeft: "auto",
-										marginRight: "auto",
-									}}
-									src={R3}
-									alt="avatar"
-									width={150}
-									height={150}
-								/>
-								<div class="flex flex-wrap justify-center">
-									<div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-										<h5 class="text-lg font-bold mb-3">Shoaib Khan</h5>
-
-										<p class="text-gray-500 mb-6">
-											<svg
-												aria-hidden="true"
-												focusable="false"
-												data-prefix="fas"
-												data-icon="quote-left"
-												class="w-6 pr-2 inline-block"
-												role="img"
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 512 512"
-											>
-												<path
-													fill="currentColor"
-													d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
-												></path>
-											</svg>
-											They are delivering this excellent product to peoples
-											homes.
-										</p>
-										<ul class="flex justify-center mb-0">
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-											<li>
-												<svg
-													aria-hidden="true"
-													focusable="false"
-													data-prefix="fas"
-													data-icon="star"
-													class="w-4 text-yellow-500"
-													role="img"
-													xmlns="http://www.w3.org/2000/svg"
-													viewBox="0 0 576 512"
-												>
-													<path
-														fill="currentColor"
-														d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-													></path>
-												</svg>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<button
-							class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-							type="button"
-							data-bs-target="#carouselExampleCaptions"
-							data-bs-slide="prev"
-						>
-							<span
-								class="carousel-control-prev-icon inline-block bg-no-repeat"
-								aria-hidden="true"
-							></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button
-							class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-							type="button"
-							data-bs-target="#carouselExampleCaptions"
-							data-bs-slide="next"
-						>
-							<span
-								class="carousel-control-next-icon inline-block bg-no-repeat"
-								aria-hidden="true"
-							></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
-				</div>
-			</div>
-			/
+			<ContactForm/>
 		</>
 	);
 }
