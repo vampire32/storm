@@ -26,7 +26,6 @@ export default function App({ Component, pageProps }) {
 			<Script src="https://cdn.tailwindcss.com" />
 			<Topbar/>
 
-			<Navbar/>
   
   <Component {...pageProps} />
   <Footer/>

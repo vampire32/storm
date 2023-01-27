@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+    overflow-x: none;
+}
 .collapse {
     visibility: visible!important;
 }
@@ -21,7 +24,11 @@ background-image: linear-gradient(0deg, rgba(46,
     background-image: url("../img/stript.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment:scroll;
+   
+
 }
+
 .contact_section {
     position: relative;
 }
@@ -105,4 +112,30 @@ background-image: linear-gradient(0deg, rgba(46,
 
 .contact_section .map_container .map-responsive {
     height: 100%;
+}
+.bg-storm
+{
+    background-color: #0c143b !important;
+/*
+background: linear-gradient(90deg,#2CD9FF,#7EFFB2);
+ animation: anim 2.5s infinte ease-in-out;
+
+}
+@keyframes anim 
+{
+    0%
+    {
+        background-position: 0 50%;
+    }
+    
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    
+    100%
+    {
+        background-position: 0 50%;
+    }
+    */
 }

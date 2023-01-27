@@ -177,7 +177,7 @@
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 450px;
+        min-height: 662px;
     }
     
     #header-carousel .carousel-item img {
@@ -421,7 +421,7 @@
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
+    color: #FFD700;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -433,7 +433,7 @@
 
 .footer .btn.btn-square:hover {
     color: var(--light);
-    border-color: var(--primary);
+    border-color: #FFD700;
 }
 
 .footer .copyright {
@@ -442,9 +442,15 @@
 }
 
 .footer .copyright a {
-    color: var(--primary);
+    color: #FFD700;
 }
 
 .footer .copyright a:hover {
     color: #FFFFFF;
+}
+
+.bg-storm
+{
+
+    background-color: #101010;
 }

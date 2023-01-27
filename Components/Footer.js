@@ -1,4 +1,5 @@
 import React from 'react'
+import { BiMap, BiPhoneCall, BiEnvelope } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -16,18 +17,19 @@ const Footer = () => {
 									src="img/icon/icon-02-light.png"
 									alt=""
 								/>
-								AirCon
+								Storm Accessories
 							</h1>
-							<span>
-								Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita
-								erat ipsum et lorem et sit, sed stet lorem sit clita. Diam dolor
-								diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
-								lorem et sit.
+							<span className='text-justify'>
+								For high-quality window films that come in a wide range of
+								styles and designs to offer privacy, safety, and sun protection,
+								Storm Automotive LLC is a reputable name in the UAE. according
+								to the UAE revised federal traffic law, which permits car
+								windows to be tinted up to 50%
 							</span>
 						</div>
 						<div class="col-md-6">
 							<h5 class="text-light mb-4">Newsletter</h5>
-							<p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
+							<p>Subscribe Now.</p>
 							<div class="position-relative">
 								<input
 									class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
@@ -45,14 +47,16 @@ const Footer = () => {
 						<div class="col-lg-3 col-md-6">
 							<h5 class="text-light mb-4">Get In Touch</h5>
 							<p>
-								<i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
-								USA
+								<BiMap />
+								123 Street, New York, USA
 							</p>
 							<p>
-								<i class="fa fa-phone-alt me-3"></i>+012 345 67890
+								<BiPhoneCall />
+								+012 345 67890
 							</p>
 							<p>
-								<i class="fa fa-envelope me-3"></i>info@example.com
+								<BiEnvelope />
+								info@example.com
 							</p>
 						</div>
 						<div class="col-lg-3 col-md-6">
@@ -85,34 +89,17 @@ const Footer = () => {
 								Terms & Condition
 							</a>
 						</div>
-						<div class="col-lg-3 col-md-6">
-							<h5 class="text-light mb-4">Follow Us</h5>
-							<div class="d-flex">
-								<a class="btn btn-square rounded-circle me-1" href="">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a class="btn btn-square rounded-circle me-1" href="">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-								<a class="btn btn-square rounded-circle me-1" href="">
-									<i class="fab fa-youtube"></i>
-								</a>
-								<a class="btn btn-square rounded-circle me-1" href="">
-									<i class="fab fa-linkedin-in"></i>
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div class="container-fluid copyright">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-								&copy; <a href="#">Your Site Name</a>, All Right Reserved.
-							</div>
-							<div class="col-md-6 text-center text-md-end">
-								Designed By <a href="https://htmlcodex.com">HTML Codex</a>{" "}
-								Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+								&copy;{" "}
+								<a href="#" style={{ color: "##FFD700" }}>
+									Storm Accessories
+								</a>
+								, All Right Reserved.
 							</div>
 						</div>
 					</div>
