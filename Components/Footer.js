@@ -3,7 +3,7 @@ import { BiMap, BiPhoneCall, BiEnvelope } from "react-icons/bi";
 
 const Footer = () => {
   return (
-		<div>
+		<footer>
 			<div
 				class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
 				data-wow-delay="0.1s"
@@ -19,7 +19,7 @@ const Footer = () => {
 								/>
 								Storm Accessories
 							</h1>
-							<span className='text-justify'>
+							<span className="text-justify">
 								For high-quality window films that come in a wide range of
 								styles and designs to offer privacy, safety, and sun protection,
 								Storm Automotive LLC is a reputable name in the UAE. according
@@ -48,30 +48,37 @@ const Footer = () => {
 							<h5 class="text-light mb-4">Get In Touch</h5>
 							<p>
 								<BiMap />
-								123 Street, New York, USA
+								Office Strom Auto Halwan Suburb - Industrial Area 4 - Sharjah -
+								United Arab Emirates
 							</p>
 							<p>
 								<BiPhoneCall />
-								+012 345 67890
+								+971 50 144 4353
 							</p>
 							<p>
 								<BiEnvelope />
-								info@example.com
+								info@stormaccessoires.com
 							</p>
 						</div>
 						<div class="col-lg-3 col-md-6">
 							<h5 class="text-light mb-4">Our Services</h5>
 							<a class="btn btn-link" href="">
-								AC Installation
+								Automotive
 							</a>
 							<a class="btn btn-link" href="">
-								Cooling Services
+								Commercial Window Films
 							</a>
 							<a class="btn btn-link" href="">
-								Heating Services
+								Fasara
 							</a>
 							<a class="btn btn-link" href="">
-								Annual Inspections
+								Di-Noc
+							</a>
+							<a class="btn btn-link" href="">
+								Residential
+							</a>
+							<a class="btn btn-link" href="">
+								Safety & Security
 							</a>
 						</div>
 						<div class="col-lg-3 col-md-6">
@@ -105,7 +112,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</footer>
 	);
 }
 

@@ -16,7 +16,7 @@ import {
 import { FcApproval } from "react-icons/fc";
 import { BsShieldCheck, BsPeople } from "react-icons/bs";
 import { GrUserWorker, GrUnorderedList, GrDeliver } from "react-icons/gr";
-import {TbTruckDelivery} from 'react-icons/tb'
+import { TbTruckDelivery } from "react-icons/tb";
 
 import A1 from "../img/about-1.jpg";
 import A2 from "../img/about-2.jpg";
@@ -41,10 +41,16 @@ import R1 from "../img/testimonial-1.jpg";
 import R2 from "../img/testimonial-2.jpg";
 import R3 from "../img/testimonial-3.jpg";
 import ContactForm from "@/Components/ContactForm";
+import { Fragment, useRef, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+	 const [open, setOpen] = useState(false);
+
+		const cancelButtonRef = useRef(null);
 	return (
 		<>
 			<Head>
@@ -94,73 +100,143 @@ export default function Home() {
 												href=""
 												class="btn btn-primary py-3 px-5 animated slideInDown"
 											>
-												Book Me
+												Call Now
 											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<Image style={{ height: "800px" }} src={C2} />
-							<div class="carousel-caption">
-								<div class="container">
-									<div class="row justify-content-center">
-										<div class="col-lg-10 pt-5">
-											<h1
-												style={{ fontWeight: "bold" }}
-												class="display-4 text-white mb-4 animated slideInDown"
-											>
-												Storm Accessories Car Window Tinting Dubai
-											</h1>
-											<p
-												style={{ color: "#FFD700", fontSize: "20px" }}
-												className="mb-4"
-											>
-												CERAMIC COATING / PPF / OFFICE & HOME WINDOW TINTING /
-												SAFETY & SECURITY FILM
-											</p>
-											<h2 class=" mb-4 pb-2 mx-sm-5 text-white text-[18px] leading-8 ">
-												For high-quality window films that come in a wide range
-												of styles and designs to offer privacy, safety, and sun
-												protection, Storm Automotive LLC is a reputable name in
-												the UAE. according to the UAE revised federal traffic
-												law, which permits car windows to be tinted up to 50%
-											</h2>
-											<a
-												href=""
+											<button
 												style={{
 													backgroundColor: "rgba(0,0,0,0.1)",
 													borderColor: "#FF7276",
 												}}
-												class="btn btn-primary py-3 px-5 animated slideInDown"
+												class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
+												onClick={() => {
+													setOpen(true);
+												}}
 											>
-												Call Now
-											</a>
+												Book Now
+											</button>
+											<Transition.Root show={open} as={Fragment}>
+												<Dialog
+													as="div"
+													className="relative z-10"
+													initialFocus={cancelButtonRef}
+													onClose={setOpen}
+												>
+													<Transition.Child
+														as={Fragment}
+														enter="ease-out duration-300"
+														enterFrom="opacity-0"
+														enterTo="opacity-100"
+														leave="ease-in duration-200"
+														leaveFrom="opacity-100"
+														leaveTo="opacity-0"
+													>
+														<div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+													</Transition.Child>
+
+													<div className="fixed inset-0 z-10 overflow-y-auto">
+														<div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+															<Transition.Child
+																as={Fragment}
+																enter="ease-out duration-300"
+																enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+																enterTo="opacity-100 translate-y-0 sm:scale-100"
+																leave="ease-in duration-200"
+																leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+																leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+															>
+																<Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-dark text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+																	<form className="px-12 py-12">
+																		<div class="mb-6">
+																			<label
+																				for="text"
+																				class="block mb-2 text-sm font-medium text-[#FFD700]"
+																			>
+																				Name
+																			</label>
+																			<input
+																				type="text"
+																				id="text"
+																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																				placeholder="name@flowbite.com"
+																				required
+																			/>
+																		</div>
+																		<div class="mb-6">
+																			<label
+																				for="email"
+																				class="block mb-2 text-sm font-medium text-[#FFD700]"
+																			>
+																				Email
+																			</label>
+																			<input
+																				type="email"
+																				id="email"
+																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+																				required
+																			/>
+																		</div>
+																		<div class="mb-6">
+																			<label
+																				for="service"
+																				class="block mb-2 text-sm font-medium text-[#FFD700]"
+																			>
+																				Services
+																			</label>
+																			<input
+																				type="text"
+																				id="service"
+																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																				required
+																			/>
+																		</div>
+																		<div class="mb-6">
+																			<label
+																				for="number"
+																				class="block mb-2 text-sm font-medium text-[#FFD700]"
+																			>
+																				Phone Number
+																			</label>
+																			<input
+																				type="number"
+																				id="number"
+																				class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+																				required
+																			/>
+																		</div>
+																		<div className=" px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
+																			<button
+																				type="button"
+																				style={{
+																					backgroundColor: "rgba(0,0,0,0.1)",
+																					borderColor: "#FF7276",
+																				}}
+																				class="btn btn-primary py-3 px-5 animated slideInDown ml-5"
+																				onClick={() => setOpen(false)}
+																			>
+																				Send
+																			</button>
+																			<button
+																				type="button"
+																				className="mt-3 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-base font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
+																				onClick={() => setOpen(false)}
+																				ref={cancelButtonRef}
+																			>
+																				Cancel
+																			</button>
+																		</div>
+																	</form>
+																</Dialog.Panel>
+															</Transition.Child>
+														</div>
+													</div>
+												</Dialog>
+											</Transition.Root>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<button
-						class="carousel-control-prev"
-						type="button"
-						data-bs-target="#header-carousel"
-						data-bs-slide="prev"
-					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button
-						class="carousel-control-next"
-						type="button"
-						data-bs-target="#header-carousel"
-						data-bs-slide="next"
-					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
 				</div>
 			</div>
 

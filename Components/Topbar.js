@@ -1,48 +1,47 @@
+import Image from 'next/image';
 import React from 'react'
 import { AiFillPhone } from "react-icons/ai";
-import { BsFillEnvelopeFill } from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
+import {HiOutlineLocationMarker} from 'react-icons/hi'
+import {Ri24HoursLine} from 'react-icons/ri'
+import Logo from '../img/Logo.png'
 
 const Topbar = () => {
   return (
-		<div>
-			<div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-				<div class="row gx-0 align-items-center">
-					<div class="col-lg-7 px-5 text-start">
-						<div class="h-100 d-inline-flex align-items-center me-4">
-							<AiFillPhone/>
-							<small>+012 345 6789</small>
-						</div>
-						<div class="h-100 d-inline-flex align-items-center me-4">
-							<BsFillEnvelopeFill/>
-							<small>info@example.com</small>
+		<div className="">
+			<header class=" container text-gray-600 body-font overflow-hidden ">
+				<div className="row flex justify-center">
+					<div className="col-md-3 hide">
+						<div className=" flex py-12">
+							<HiOutlineLocationMarker size={45} color="#ffae42" />
+							<h3 className="mt-2">
+								Address: Office Strom Auto Halwan Suburb - Industrial Area 4 -
+								Sharjah - United Arab Emirates
+							</h3>
 						</div>
 					</div>
-					<div class="col-lg-5 px-5 text-end">
-						<ol class="breadcrumb justify-content-end mb-0">
-							<li class="breadcrumb-item">
-								<a class="text-white-50 small" href="#">
-									Home
-								</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a class="text-white-50 small" href="#">
-									Terms
-								</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a class="text-white-50 small" href="#">
-									Privacy
-								</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a class="text-white-50 small" href="#">
-									Support
-								</a>
-							</li>
-						</ol>
+					<div className="col-md-4">
+						<div className=" flex  justify-center ml-10 mt-3">
+							<Image src={Logo} width={200} height={200} />
+						</div>
+					</div>
+					<div className="col-md-2 hide">
+						<div className=" flex py-12 justify-center">
+							<a href="tel:+923365124444">
+								<BsTelephone size={40} color=" ffae42" className="" />
+							</a>
+
+							<h3>+971 50 144 4353</h3>
+						</div>
+					</div>
+					<div className="col-md-2 hide">
+						<div className=" flex py-12 justify-center">
+							<Ri24HoursLine size={40} color="#ffae42" />
+							<h3 className="ml-4">24/7</h3>
+						</div>
 					</div>
 				</div>
-			</div>
+			</header>
 		</div>
 	);
 }
