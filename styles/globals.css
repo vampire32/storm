@@ -188,4 +188,18 @@ background: linear-gradient(90deg,#2CD9FF,#7EFFB2);
     .hide {
             display: none;
         }
+        .gop{
+            margin-left: 22px!important;
+        }
+        .gbbb{
+            margin-bottom: 11px;
+        }
+}
+@media screen and (max-width:375px){
+    .gapp{
+        margin-top: 30px;
+    }
+        #header-carousel .carousel-item {
+            min-height: 740px;
+        }
 }

@@ -24,11 +24,11 @@ export default function App({ Component, pageProps }) {
 				crossorigin="anonymous"
 			/>
 			<Script src="https://cdn.tailwindcss.com" />
-			<Topbar/>
+			
 
   
   <Component {...pageProps} />
-  <Footer/>
+ 
   </>
   )
 
